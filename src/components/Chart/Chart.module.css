@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+/* 모바일 & 태블릿 버전 : 차트 크기 키우기 */
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+  }
+}

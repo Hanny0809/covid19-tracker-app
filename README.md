@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# < 😷 COVID-19 Tracker >
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+전세계 코로나 바이러스 감염 현황 API를 이용하여 데이터를 시각화 한 `반응형 웹페이지`를 구현하였다. 전세계인의 감염자수와 사망자수 데이터는 꺽은선 그래프로 시각화하였고, 180여개의 국가 중 특정 국가를 선택하여 감염자수와 사망자 수 데이터를 막대 차트로 시각화하였다.
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+![webpage](src/images/covid-19.PNG)
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> ### 사용툴
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- VScode
+- React
+- Material UI
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> ### 사용 API
 
-### `npm run build`
+<a href="https://covid19.mathdro.id/api">전세계 코로나감염현황 API</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> ### 사용 UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a href="https://mui.com/getting-started/installation/"> Materia UI</a>
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> ### 다운로드 패키지
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| 패키지            | 기능                      |
+| ----------------- | :------------------------ |
+| axios             | API 요청 수행             |
+| react-chartjs-2   | 차트 만들기               |
+| chart.js          | 차트 만들기               |
+| react-countup     | 수치 증가 애니메이션 표현 |
+| classnames        | CSS ClassName 여러개 지정 |
+| @material-ui/core | UI 툴 제공                |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+> ### 기능
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- COVID-19 API 데이터를 패칭하고 비동기식으로 데이터 처리
+- 모바일 & 태블릿에서도 화면이 깨지지 않도록 반응형 웹페이지 구현
+- 180여개 국가의 코로나 감염 현황 데이터 시각화
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> ### 한계점
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 현재 API에서 회복한 사람 수의 데이터가 제공되지 않고 있다. 그리하여 recovered 수가 '0'으로 설정되어 있다.
+- 일일데이터는 제공되지 않아 현재 최종 통계 데이터만 가져올 수 있다.
