@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/covid19-tracker-app/static/css/main.4f736092.css",
+    "main.js": "/covid19-tracker-app/static/js/main.a724c6f7.js",
+    "static/media/image.png": "/covid19-tracker-app/static/media/image.9e5d4fc7428c24bbc17d.png",
+    "index.html": "/covid19-tracker-app/index.html",
+    "main.4f736092.css.map": "/covid19-tracker-app/static/css/main.4f736092.css.map",
+    "main.a724c6f7.js.map": "/covid19-tracker-app/static/js/main.a724c6f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f736092.css",
+    "static/js/main.a724c6f7.js"
+  ]
+}
