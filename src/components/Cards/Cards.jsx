@@ -12,14 +12,14 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
   return (
     <div className={styles.container}>
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center">
         {/* 감염자수 */}
         {/* xs 모바일 화면 크기 / md 중간크기 이상의 화면 크기 */}
         <Grid
           item
           component={Card}
           xs={12}
-          md={3}
+          md={4}
           className={cx(styles.card, styles.infected)}
         >
           <CardContent>
@@ -44,7 +44,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           </CardContent>
         </Grid>
         {/* 회복된 사람수 */}
-        <Grid
+        {/* <Grid
           item
           component={Card}
           xs={12}
@@ -70,13 +70,13 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               Number of recoveries from COVID-19
             </Typography>
           </CardContent>
-        </Grid>
+        </Grid> */}
         {/* 사망자 수 */}
         <Grid
           item
           component={Card}
           xs={12}
-          md={3}
+          md={4}
           className={cx(styles.card, styles.deaths)}
         >
           <CardContent>
