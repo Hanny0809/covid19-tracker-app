@@ -5,7 +5,7 @@ import Chart from "chart.js/auto";
 
 import styles from "./Chart.module.css";
 
-const Chart1 = ({ data: { confirmed, recovered, deaths }, country }) => {
+const Chart1 = ({ data: { confirmed, deaths }, country }) => {
   const [dailyData, setDailyData] = useState([]);
 
   useEffect(() => {
