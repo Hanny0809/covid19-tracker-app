@@ -6,12 +6,29 @@
 
 ![webpage](src/images/covid-19.PNG)
 
+현재 코로나 회복자 수(Recovered) 데이터가 0으로 설정되어 있다.
+<br>
+
+![webpage](src/images/covid19.PNG)
+
+![covid19_tracker_korea](src/images/covid19-korea.PNG)
+<br>
+누락된 데이터를 제외하고 화면 구현
+<br>
+<br>
+
+> ### 기술 스택
+
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+
 <br>
 
 > ### 사용툴
 
 - VScode
-- React
 - Material UI
 
 <br>
